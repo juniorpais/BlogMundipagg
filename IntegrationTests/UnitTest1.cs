@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Configuration;
 
 namespace IntegrationTests
 {
@@ -9,6 +10,9 @@ namespace IntegrationTests
         [TestMethod]
         public void TestMethod1()
         {
+            string tmp = ConfigurationManager.AppSettings["mySetting"];
+
+
         }
     }
 }

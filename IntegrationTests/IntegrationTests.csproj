@@ -63,6 +63,20 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogMundiPagg.Repository.DAL\BlogMundiPagg.Repository.DAL.csproj">
+      <Project>{2b9caaed-2d15-4184-881b-4ddfdc63d932}</Project>
+      <Name>BlogMundiPagg.Repository.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogMundiPagg.Repository\BlogMundiPagg.Repository.Entities.csproj">
+      <Project>{7f423d49-f1f4-46b4-8c27-88ae1702efcd}</Project>
+      <Name>BlogMundiPagg.Repository.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogMundipagg.Web\BlogMundiPagg.Web.csproj">
+      <Project>{87f662a9-d658-4d4b-ad6b-68000a64bf40}</Project>
+      <Name>BlogMundiPagg.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -10,9 +10,7 @@ namespace IntegrationTests
         [TestMethod]
         public void TestMethod1()
         {
-            string tmp = ConfigurationManager.AppSettings["mySetting"];
-
-
+            
         }
     }
 }

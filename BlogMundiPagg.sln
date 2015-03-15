@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "Integra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMundiPagg.Repository.DAL", "BlogMundiPagg.Repository.DAL\BlogMundiPagg.Repository.DAL.csproj", "{2B9CAAED-2D15-4184-881B-4DDFDC63D932}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMundiPagg.Web", "BlogMundipagg.Web\BlogMundiPagg.Web.csproj", "{87F662A9-D658-4D4B-AD6B-68000A64BF40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{2B9CAAED-2D15-4184-881B-4DDFDC63D932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B9CAAED-2D15-4184-881B-4DDFDC63D932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B9CAAED-2D15-4184-881B-4DDFDC63D932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F662A9-D658-4D4B-AD6B-68000A64BF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F662A9-D658-4D4B-AD6B-68000A64BF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F662A9-D658-4D4B-AD6B-68000A64BF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F662A9-D658-4D4B-AD6B-68000A64BF40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

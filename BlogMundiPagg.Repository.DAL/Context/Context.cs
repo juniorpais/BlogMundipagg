@@ -7,6 +7,8 @@ namespace BlogMundiPagg.Repository.DAL.Context
     {
         public Context() : base("ConnDB") { }
 
+        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.Usuario> Usuarios { get; set; }
+
     }
 }
 

@@ -3,7 +3,7 @@ using BlogMundiPagg.Repository.Entities;
 
 namespace BlogMundiPagg.Repository.DAL.Repository
 {
-    public class TagRepository : GenericRepository<Tag>
+    public class TagRepository : GenericRepository<Tag>, ITagRepository
     {
     }
 }

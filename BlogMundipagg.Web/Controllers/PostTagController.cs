@@ -13,113 +13,111 @@ using BlogMundiPagg.Repository.DAL.Repository;
 
 using Ninject;
 
+
 namespace BlogMundiPagg.Web.Controllers
 {
-    public class UsuarioController : Controller
+    public class PostTagController : Controller
     {
-        //private Context db = new Context();
         [Inject]
-        public IUsuarioRepository repUsuario { get; set; }
-
-        //private readonly UsuarioRepository repUsuario = new UsuarioRepository();
-
-        // GET: /Usuario/
+        public IPostTagRepository repPostTag { get; set; }
+                
+        // GET: /PostTag/
         public ActionResult Index()
         {
-            return View(repUsuario.ListAll().ToList());
+            return View(repPostTag.ListAll().ToList());
         }
 
-        // GET: /Usuario/Details/5
+        // GET: /PostTag/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = repUsuario.Find(id);
-            if (usuario == null)
+            PostTag posttag = repPostTag.Find(id);
+            if (posttag == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(posttag);
         }
 
-        // GET: /Usuario/Create
+        // GET: /PostTag/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: /Usuario/Create
+        // POST: /PostTag/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="UsuarioID,Nome,Email,DataCadastro,Foto,Senha")] Usuario usuario)
+        public ActionResult Create([Bind(Include="PostTagID")] PostTag posttag)
         {
             if (ModelState.IsValid)
             {
-                repUsuario.Add(usuario);
-                repUsuario.Save();
+                repPostTag.Add(posttag);
+                repPostTag.Save();
                 return RedirectToAction("Index");
             }
 
-            return View(usuario);
+            return View(posttag);
         }
 
-        // GET: /Usuario/Edit/5
+        // GET: /PostTag/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = repUsuario.Find(id);
-            if (usuario == null)
+            PostTag posttag = repPostTag.Find(id);
+            if (posttag == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(posttag);
         }
 
-        // POST: /Usuario/Edit/5
+        // POST: /PostTag/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="UsuarioID,Nome,Email,DataCadastro,Foto,Senha")] Usuario usuario)
+        public ActionResult Edit([Bind(Include="PostTagID")] PostTag posttag)
         {
             if (ModelState.IsValid)
             {
-                repUsuario.Update(usuario);
-                repUsuario.Save();
+                repPostTag.Update(posttag);
+                repPostTag.Save();
                 return RedirectToAction("Index");
             }
-            return View(usuario);
+            return View(posttag);
         }
 
-        // GET: /Usuario/Delete/5
+        // GET: /PostTag/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Usuario usuario = repUsuario.Find(id);
-            if (usuario == null)
+            PostTag posttag = repPostTag.Find(id);
+            if (posttag == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(posttag);
         }
 
-        // POST: /Usuario/Delete/5
+        // POST: /PostTag/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            repUsuario.Delete(u => u.UsuarioID.Equals(id));
-            repUsuario.Save();
+            repPostTag.Delete(p => p.PostTagID.Equals(id));
+            repPostTag.Save();
             return RedirectToAction("Index");
         }
 
@@ -127,7 +125,7 @@ namespace BlogMundiPagg.Web.Controllers
         {
             if (disposing)
             {
-                repUsuario.Dispose();
+                repPostTag.Dispose();
             }
             base.Dispose(disposing);
         }

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace BlogMundiPagg.Repository.DAL.Repository.Base
 {
-    interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T> where T : class
     {
         void Add(T obj);
         void Delete(Func<T, bool> predicate);
@@ -12,5 +12,6 @@ namespace BlogMundiPagg.Repository.DAL.Repository.Base
         IQueryable<T> ListAll();
         IQueryable<T> List(Func<T, bool> predicate);
         T Find(params object[] Key);
+        void Dispose();
     }
 }

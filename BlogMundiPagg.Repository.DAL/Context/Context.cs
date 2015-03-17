@@ -9,6 +9,12 @@ namespace BlogMundiPagg.Repository.DAL.Context
 
         public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.Usuario> Usuarios { get; set; }
 
+        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.Post> Posts { get; set; }
+
+        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.PostTag> PostTags { get; set; }
+
+        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.Tag> Tags { get; set; }
+
     }
 }
 

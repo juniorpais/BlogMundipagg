@@ -6,8 +6,6 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using BlogMundiPagg.Repository.Entities;
-using BlogMundiPagg.Repository.DAL.Context;
 
 using BlogMundiPagg.Repository.Entities;
 using BlogMundiPagg.Repository.DAL.Context;

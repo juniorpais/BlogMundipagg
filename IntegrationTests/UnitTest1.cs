@@ -17,22 +17,20 @@ namespace IntegrationTests
         [TestMethod]
         public void TestMethod1()
         {
-            IUsuarioRepository mokcUsuario = new Moq.Mock<IUsuarioRepository>().Object;
+            //IUsuarioRepository mokcUsuario = new Moq.Mock<IUsuarioRepository>().Object;
 
-            var userController = new UsuarioController();
+            //var userController = new UsuarioController();
 
-            userController.repUsuario = mokcUsuario;
+            //userController.repUsuario = mokcUsuario;
 
-            var result = userController.Create(
-                new Usuario()
-                    {
-                        Nome = "Bartholomeu Salvattori",
-                        Email = "barth@gmail.com",
-                        Senha = "1234567"
+            //var result = userController.Create(
+            //    new Usuario()
+            //        {
+            //            Nome = "Bartholomeu Salvattori",
+            //            Email = "barth@gmail.com",
+            //            Senha = "1234567"
 
-                    });
-
-                        
+            //        });
 
 
         }

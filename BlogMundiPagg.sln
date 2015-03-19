@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMundiPagg.Repository.Entities", "BlogMundiPagg.Repository\BlogMundiPagg.Repository.Entities.csproj", "{7F423D49-F1F4-46B4-8C27-88AE1702EFCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{24018FA6-9C6F-44BF-90D0-0386043557F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMundiPaggTests", "IntegrationTests\BlogMundiPaggTests.csproj", "{24018FA6-9C6F-44BF-90D0-0386043557F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogMundiPagg.Repository.DAL", "BlogMundiPagg.Repository.DAL\BlogMundiPagg.Repository.DAL.csproj", "{2B9CAAED-2D15-4184-881B-4DDFDC63D932}"
 EndProject

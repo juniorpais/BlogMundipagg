@@ -123,6 +123,43 @@ namespace BlogMundiPagg.Web.Controllers
             return RedirectToAction("Index");
         }
 
+
+        [AllowAnonymous]
+        public ActionResult Login(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
+        //
+        // POST: /Account/Login
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(Usuario model, string returnUrl)
+        {
+           
+            return View();
+        }
+
+        //
+        // POST: /Account/LogOff
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult LogOff()
+        {
+            //WebSecurity.Logout();
+
+            return RedirectToAction("Index", "Home");
+        }
+
+               //
+        // POST: /Account/Register
+
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

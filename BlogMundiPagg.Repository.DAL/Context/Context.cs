@@ -7,13 +7,13 @@ namespace BlogMundiPagg.Repository.DAL.Context
     {
         public Context() : base("ConnDB") { }
 
-        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.Usuario> Usuarios { get; set; }
+        public System.Data.Entity.DbSet<Usuario> Usuarios { get; set; }
 
-        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.Post> Posts { get; set; }
+        public System.Data.Entity.DbSet<Post> Posts { get; set; }
 
-        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.PostTag> PostTags { get; set; }
+        public System.Data.Entity.DbSet<PostTag> PostTags { get; set; }
 
-        public System.Data.Entity.DbSet<BlogMundiPagg.Repository.Entities.Tag> Tags { get; set; }
+        public System.Data.Entity.DbSet<Tag> Tags { get; set; }
 
     }
 }
